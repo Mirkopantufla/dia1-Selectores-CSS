@@ -1,0 +1,82 @@
+/* 
+Especificacion: (ID, Class, Element)
+selector {
+    propiedad: valor;
+}
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+/* 
+@import url('./header.css');
+@import url('./main.css');
+@import url('./footer.css'); 
+*/
+
+/* Selector Universal */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+} */
+
+/* Selector de ID */
+
+#content {
+    /* (1, 0, 0) */
+    border: 1px dashed black;
+}
+
+/* Selector de Clase */
+
+.saludos {
+    /* (0, 1, 0) */
+    color: blueviolet;
+    font-size: 15px;
+}
+
+/* Selector de Tipo o Etiqueta */
+
+a {
+    /* (0, 0, 1) */
+    color: green;
+    font-size: 14px;
+}
+
+/* Selector Descendiente */
+div i {
+    color: brown;
+    text-align: center;
+    text-shadow: 1px 1px 3px grey;
+}
+
+* li {
+    color: red;
+}
+
+#content p {
+    color: burlywood;
+    font-size: 15px;
+}
+
+#content p span {
+    font-family: "Bruno Ace SC";
+}
+
+/* Selector Hijo */
+#content>p>span {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Selector Adyacente */
+.noticia>h3+p {
+    color: cadetblue;
+}
+
+/* Selector Hermano */
+.noticia>h3~p {
+    color: coral;
+}
+
+/* Selector de Atributo */
